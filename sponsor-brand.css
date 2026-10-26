@@ -1,0 +1,101 @@
+/* Apex Key Group website sponsorship and Wes design credit.
+   Shared by the homepage, interior pages, and registration preview. */
+.sponsor-card-apex .apex-sponsor-link {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 123px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: center;
+  color: #263339;
+  text-decoration: none;
+}
+.sponsor-card-apex .apex-sponsor-link:hover span,
+.sponsor-card-apex .apex-sponsor-link:focus-visible span { color: #563e9d; }
+.sponsor-card-apex .apex-sponsor-link:focus-visible {
+  outline: 3px solid #825bea;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.sponsor-card-apex .apex-sponsor-link img {
+  display: block;
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  background: #080b18;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(45,25,88,.2);
+}
+.sponsor-card-apex .apex-sponsor-link span {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.sponsor-card-apex .apex-sponsor-link small {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: #6a5484;
+}
+
+.footer-base .wes-powered,
+.footer .wes-powered {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-underline-offset: 4px;
+  border-radius: 12px;
+}
+.footer-base .wes-powered:hover,
+.footer-base .wes-powered:focus-visible,
+.footer .wes-powered:hover,
+.footer .wes-powered:focus-visible { color: #f4e4aa; text-decoration: none; }
+.footer-base .wes-powered:focus-visible,
+.footer .wes-powered:focus-visible { outline: 2px solid #f0c040; outline-offset: 4px; }
+.footer-base .wes-powered img,
+.footer .wes-powered img {
+  display: block;
+  width: 94px;
+  height: 118px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
+  border: 1px solid rgba(244,214,125,.45);
+  background: #100f18;
+}
+.footer-base .wes-powered .wes-powered-copy,
+.footer .wes-powered .wes-powered-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.footer-base .wes-powered .wes-powered-copy strong,
+.footer .wes-powered .wes-powered-copy strong {
+  font-family: Outfit, "DM Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: white;
+}
+.footer-base .wes-powered .wes-powered-copy small,
+.footer .wes-powered .wes-powered-copy small {
+  color: #d1dde0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+@media (max-width: 620px) {
+  .footer-base .wes-powered img,
+  .footer .wes-powered img { width: 76px; height: 100px; }
+  .footer-base .wes-powered,
+  .footer .wes-powered { gap: 11px; }
+}
