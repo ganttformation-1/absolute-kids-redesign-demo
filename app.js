@@ -21,12 +21,12 @@ countdown();setInterval(countdown,1000);
 const banner=document.querySelector('.concept-strip');if(banner)banner.remove();
 const storyOldLink=document.querySelector('.story-copy a.dark-link');if(storyOldLink)storyOldLink.remove();
 const christmasButton=document.querySelector('.holiday-copy .btn');
-if(christmasButton){christmasButton.href='/registration.html';christmasButton.textContent='Registration Closed — 2027 Updates →';christmasButton.removeAttribute('target');christmasButton.removeAttribute('rel');}
+if(christmasButton){christmasButton.href='/registration.html';christmasButton.textContent='Register Your Family →';christmasButton.removeAttribute('target');christmasButton.removeAttribute('rel');}
 const navCta=document.querySelector('.nav-cta');
-if(navCta){navCta.href='/registration.html';navCta.textContent='Registration Closed ↗';navCta.removeAttribute('target');navCta.removeAttribute('rel')}
-if(nav){const signup=document.createElement('a');signup.href='/registration.html';signup.textContent='Registration Closed';nav.appendChild(signup)}
+if(navCta){navCta.href='/registration.html';navCta.textContent='Register Now ↗';navCta.removeAttribute('target');navCta.removeAttribute('rel')}
+if(nav){const signup=document.createElement('a');signup.href='/registration.html';signup.textContent='Register';nav.appendChild(signup)}
 const footerExplore=document.querySelector('.footer-links');if(footerExplore){
- const signup=document.createElement('a');signup.href='/registration.html';signup.textContent='Registration Closed';footerExplore.appendChild(signup);
+ const signup=document.createElement('a');signup.href='/registration.html';signup.textContent='Register';footerExplore.appendChild(signup);
 }
 const copyright=document.querySelector('.footer-base > span');
 if(copyright)copyright.textContent='© 2026 Absolute Kids. All rights reserved.';
@@ -35,7 +35,7 @@ if(copyright)copyright.textContent='© 2026 Absolute Kids. All rights reserved.'
 (function(){
  const nav=document.getElementById('primary-nav');
  if(nav){
- const navItems=[['/about.html','Our Story'],['/programs.html','Programs'],['/events.html','Events'],['/donate.html','Donate'],['/gallery.html','Gallery'],['#sponsors','Supporters'],['/contact.html','Contact'],['/registration.html','Registration Closed']];
+ const navItems=[['/about.html','Our Story'],['/programs.html','Programs'],['/events.html','Events'],['/donate.html','Donate'],['/gallery.html','Gallery'],['#sponsors','Supporters'],['/contact.html','Contact'],['/registration.html','Register']];
  nav.innerHTML=navItems.map(([path,title])=>'<a href="'+path+'">'+title+'</a>').join('');
  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{const m=document.querySelector('.menu-toggle');m?.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}));
  }
@@ -49,7 +49,7 @@ if(copyright)copyright.textContent='© 2026 Absolute Kids. All rights reserved.'
  replaceLink('.way-card.way-green a','/contact.html#partner','Become a Partner ↗');
  replaceLink('.contact-layout .contact-website','/contact.html','Contact Absolute Kids ↗');
  const footerNav=document.querySelector('.footer-main .footer-links');
- if(footerNav){footerNav.innerHTML='<strong>Explore</strong><a href="/about.html">Our Story</a><a href="/programs.html">Programs</a><a href="/events.html">Events</a><a href="/donate.html">Donate</a><a href="/gallery.html">Gallery</a><a href="#sponsors">Supporters</a><a href="/registration.html">Registration Closed</a>'}
+ if(footerNav){footerNav.innerHTML='<strong>Explore</strong><a href="/about.html">Our Story</a><a href="/programs.html">Programs</a><a href="/events.html">Events</a><a href="/donate.html">Donate</a><a href="/gallery.html">Gallery</a><a href="#sponsors">Supporters</a><a href="/registration.html">Register</a>'}
  const footers=document.querySelectorAll('.footer-main .footer-links');
  if(footers.length>1){const old=footers[1].querySelector('a[href="https://www.absolutekids.org/"]');if(old){old.href='/contact.html';old.textContent='Contact Us ↗'}}
  const programCards=document.querySelectorAll('.program-card');
