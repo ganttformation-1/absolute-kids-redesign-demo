@@ -1,0 +1,4 @@
+/* Original home photographs and supporter artwork, restored without changing content. */
+.hero-visual .hero-caption{position:static;width:fit-content;max-width:100%;margin:16px auto 0;transform:rotate(-4deg)}
+.sponsor-card>.restored-sponsor-logo{display:block;width:100%;height:112px;max-width:180px;flex:0 0 112px;object-fit:contain;object-position:center}
+.sponsor-list .sponsor-card{min-width:0}

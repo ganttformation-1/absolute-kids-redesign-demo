@@ -1,0 +1,5 @@
+/* Previously published photographs restored to their existing content sections. */
+.restored-secondary-photo{margin:0;min-width:0;background:#fff;border:8px solid #fff;border-radius:24px;overflow:hidden;box-shadow:0 12px 32px #28363a0b}
+.restored-secondary-photo img{display:block;width:100%;max-width:100%;height:auto;object-fit:cover;object-position:center}
+.restored-secondary-photo.team-bench{margin-bottom:26px}
+@media(max-width:760px){.restored-secondary-photo{border-width:6px;border-radius:20px}}
