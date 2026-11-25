@@ -1,0 +1,30 @@
+/* Scoped privacy controls; existing page and footer layouts stay intact. */
+.ak-cookie-banner,.ak-cookie-dialog{--ak-cc-ink:#28363a;--ak-cc-border:#d9dcd9;--ak-cc-bg:#fffdfb;box-sizing:border-box;font-family:'DM Sans',system-ui,sans-serif;color:var(--ak-cc-ink);font-size:14px;line-height:1.6}
+.ak-cookie-banner *,.ak-cookie-dialog *{box-sizing:border-box}
+.ak-cookie-banner{position:fixed;z-index:1000;bottom:16px;left:16px;right:16px;max-width:1100px;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;margin:0 auto;background:var(--ak-cc-bg);border:1px solid var(--ak-cc-border);border-radius:17px;box-shadow:0 9px 40px #13202238;padding:20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center}
+.ak-cookie-banner[hidden],.ak-cookie-dialog[hidden],.ak-legal-links [hidden]{display:none!important}
+.ak-cookie-banner h2,.ak-cookie-dialog h2{font-family:Outfit,'DM Sans',system-ui,sans-serif;line-height:1.25;letter-spacing:-.02em;margin:0 0 7px;font-size:20px;color:var(--ak-cc-ink)}
+.ak-cookie-banner p{margin:0;color:#4c5b5d;font-size:13px;line-height:1.6;max-width:700px}
+.ak-cookie-banner a,.ak-cookie-dialog a{color:#923c2a;text-decoration:underline;text-underline-offset:3px}
+.ak-cookie-buttons{display:flex;gap:9px;align-items:stretch;justify-content:flex-end;flex-wrap:wrap}
+.ak-cookie-button{appearance:none;cursor:pointer;border:1px solid #a84330;border-radius:24px;padding:11px 14px;font:700 13px/1.4 'DM Sans',system-ui,sans-serif;background:#fff;color:#773322;min-height:44px;white-space:normal;text-align:center}
+.ak-cookie-button:hover{background:#fff0e8}
+.ak-cookie-button:focus-visible,.ak-cookie-close:focus-visible,.ak-cookie-banner a:focus-visible,.ak-cookie-dialog input:focus-visible,.ak-legal-links a:focus-visible,.ak-legal-links button:focus-visible{outline:3px solid #765292;outline-offset:3px}
+.ak-cookie-dialog{width:calc(100% - 32px);max-width:600px;max-height:85vh;max-height:85dvh;overflow:auto;padding:24px;border:1px solid #ddd5ce;border-radius:18px;background:var(--ak-cc-bg);box-shadow:0 12px 50px #00000030}
+.ak-cookie-dialog::backdrop{background:#142025a8}
+.ak-cookie-dialog-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.ak-cookie-dialog-head h2{margin-top:8px}
+.ak-cookie-close{appearance:none;flex:0 0 44px;width:44px;min-height:44px;border:1px solid #b9c0be;border-radius:12px;background:#fff;color:#28363a;font-size:25px;line-height:1;cursor:pointer}
+.ak-cookie-dialog p{font-size:13px;line-height:1.65;color:#47585a;margin:10px 0 18px}
+.ak-cookie-category{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:17px 0;border-top:1px solid #e2e5e1;cursor:pointer}
+.ak-cookie-category strong{display:block;color:#243438;font-size:15px;line-height:1.5}
+.ak-cookie-category small{display:block;max-width:450px;color:#506063;font-size:12px;line-height:1.6;margin-top:3px}
+.ak-cookie-category input{width:22px;min-width:22px;height:22px;flex:0 0 22px;margin:3px 0;accent-color:#a84330}
+.ak-cookie-dialog-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:14px}
+.ak-legal-links{display:flex;align-items:center;justify-content:center;gap:6px 18px;flex-wrap:wrap;margin:14px 0;font-size:12px}
+.ak-legal-links a,.ak-legal-links button,.footer .ak-legal-links a,.footer .ak-legal-links button,.site-footer .ak-legal-links a,.site-footer .ak-legal-links button{display:inline-flex;align-items:center;min-height:44px;margin:0;font:600 12px/1.4 'DM Sans',system-ui,sans-serif;color:inherit;text-decoration:underline;text-underline-offset:3px}
+.ak-legal-links button{appearance:none;border:0;background:transparent;cursor:pointer;padding:4px 0;border-radius:2px}
+@media(max-width:800px){.ak-cookie-banner{grid-template-columns:1fr;gap:16px}.ak-cookie-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.ak-cookie-button{padding:10px 11px}}
+@media(max-width:480px){.ak-cookie-banner{bottom:10px;left:10px;right:10px;padding:16px;border-radius:13px;gap:13px}.ak-cookie-banner h2{font-size:18px}.ak-cookie-banner p{font-size:12px}.ak-cookie-buttons .ak-cookie-button{font-size:12px;padding:10px 8px}.ak-cookie-dialog{padding:19px}.ak-cookie-dialog-actions{display:grid;grid-template-columns:1fr 1fr}.ak-cookie-dialog-actions .ak-cookie-button{font-size:12px}.ak-legal-links{gap:4px 16px}}
+@media(prefers-reduced-motion:reduce){.ak-cookie-banner,.ak-cookie-dialog{scroll-behavior:auto}}
+@media print{.ak-cookie-banner,.ak-cookie-dialog,.ak-legal-links button{display:none!important}}
