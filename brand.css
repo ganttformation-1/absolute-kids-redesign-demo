@@ -1,0 +1,7 @@
+/* Original nonprofit logo, unchanged and shown in full. */
+.logo::before { content: none; }
+.logo, .wordmark, .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand-logo { display: block; width: 64px; height: auto; max-width: 100%; object-fit: contain; background: white; }
+.footer .logo, .footer-wordmark { width: max-content; }
+.footer .brand-logo, .site-footer .brand-logo { width: 72px; }
+@media (max-width:650px) { .brand-logo { width: 52px; } }
